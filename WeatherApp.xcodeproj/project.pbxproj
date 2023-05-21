@@ -11,6 +11,10 @@
 		1BA04E6E29D1EC2400D9EAFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA04E6D29D1EC2400D9EAFC /* ContentView.swift */; };
 		1BA04E7029D1EC2600D9EAFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA04E6F29D1EC2600D9EAFC /* Assets.xcassets */; };
 		1BA04E7329D1EC2600D9EAFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA04E7229D1EC2600D9EAFC /* Preview Assets.xcassets */; };
+		1BA04E7A29D1ECB000D9EAFC /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA04E7929D1ECB000D9EAFC /* WeatherResponse.swift */; };
+		1BA04E7C29D1ED1500D9EAFC /* WeatherApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA04E7B29D1ED1500D9EAFC /* WeatherApiClient.swift */; };
+		1BA04E7E29D1ED8E00D9EAFC /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA04E7D29D1ED8E00D9EAFC /* WeatherModel.swift */; };
+		1BA04E8329D1F9EC00D9EAFC /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA04E8229D1F9EC00D9EAFC /* info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		1BA04E6D29D1EC2400D9EAFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BA04E6F29D1EC2600D9EAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA04E7229D1EC2600D9EAFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BA04E7929D1ECB000D9EAFC /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		1BA04E7B29D1ED1500D9EAFC /* WeatherApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiClient.swift; sourceTree = "<group>"; };
+		1BA04E7D29D1ED8E00D9EAFC /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		1BA04E8229D1F9EC00D9EAFC /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 				1BA04E6D29D1EC2400D9EAFC /* ContentView.swift */,
 				1BA04E6F29D1EC2600D9EAFC /* Assets.xcassets */,
 				1BA04E7129D1EC2600D9EAFC /* Preview Content */,
+				1BA04E7929D1ECB000D9EAFC /* WeatherResponse.swift */,
+				1BA04E7B29D1ED1500D9EAFC /* WeatherApiClient.swift */,
+				1BA04E7D29D1ED8E00D9EAFC /* WeatherModel.swift */,
+				1BA04E8229D1F9EC00D9EAFC /* info.plist */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			files = (
 				1BA04E7329D1EC2600D9EAFC /* Preview Assets.xcassets in Resources */,
 				1BA04E7029D1EC2600D9EAFC /* Assets.xcassets in Resources */,
+				1BA04E8329D1F9EC00D9EAFC /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA04E6E29D1EC2400D9EAFC /* ContentView.swift in Sources */,
+				1BA04E7A29D1ECB000D9EAFC /* WeatherResponse.swift in Sources */,
+				1BA04E7C29D1ED1500D9EAFC /* WeatherApiClient.swift in Sources */,
 				1BA04E6C29D1EC2400D9EAFC /* WeatherAppApp.swift in Sources */,
+				1BA04E7E29D1ED8E00D9EAFC /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "want to access location to fetch current whether data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +315,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "want to access location to fetch current whether data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
